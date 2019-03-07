@@ -1,17 +1,8 @@
 $(function() {
-// show hide tabs	
-$('#tabs li').click(function(){
-		var thisClass = this.className.slice(0,2);
-		$('div.t1').hide();
-		$('div.' + thisClass).fadeIn(500);
-		$('#tabs li').removeClass('active');
-		$(this).addClass('active');
-		return false;
-	});
-	$('li.t1').click();
 
 
- //scroll to next page
+	/*$('.single-item').slick();*/
+
 	$('.ser').click(function () {
 		$('html, body').animate({scrollTop: $(".se").offset().top}, 2000);
 	});
