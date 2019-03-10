@@ -3,23 +3,36 @@ $(function() {
 
 	/*$('.single-item').slick();*/
 
-	$('.ser').click(function () {
-		$('html, body').animate({scrollTop: $(".se").offset().top}, 2000);
+	$('.scroll-about').click(function () {
+		$('html, body').animate({scrollTop: $(".scroll-about-us").offset().top}, 2000);
 	});
-	$('.ab').click(function () {
-		$('html, body').animate({scrollTop: $(".abot").offset().top}, 2000);
+	$('.scroll-gallery').click(function () {
+		$('html, body').animate({scrollTop: $(".scroll-gallery-us").offset().top}, 2000);
 	});
-	$('.works').click(function () {
-		$('html, body').animate({scrollTop: $(".portf").offset().top}, 2000);
+	$('.scroll-shop').click(function () {
+		$('html, body').animate({scrollTop: $(".scroll-shop-us").offset().top}, 3000);
 	});
-	$('.tm').click(function () {
-		$('html, body').animate({scrollTop: $(".comand").offset().top}, 2000);
+	$('.scroll-elements').click(function () {
+		$('html, body').animate({scrollTop: $(".scroll-elements-us").offset().top}, 2000);
 	});
-	$('.price').click(function () {
-		$('html, body').animate({scrollTop: $(".pricing").offset().top}, 2000);
+	$('.scroll-blog').click(function () {
+		$('html, body').animate({scrollTop: $(".scroll-blog-us").offset().top}, 2000);
 	});
-	$('.testi').click(function () {
-		$('html, body').animate({scrollTop: $(".testimonial").offset().top}, 2000);
+	$('.scroll-reservation').click(function () {
+		$('html, body').animate({scrollTop: $(".scroll-reservation-us").offset().top}, 2000);
 	});
+
+
+	$('.price-item button').hover(function() {
+		$(this).css({'color':'#38ecbf','background-color':'#26265c'});
+		$(this).parent().prev().find('h3,span').css('color', '#38ecbf');
+
+
+	});
+
+	$('.price-item button').mouseout(function() {
+		$(this).css({'color':'#ffffff','background-color':'#5b6ceb'});
+		$(this).parent().prev().find('h3,span').css('color', '#ffffff');
+	})
 
 });
