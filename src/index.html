@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
 	<meta charset="UTF-8">
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<link rel="stylesheet" type="text/css" href="font/font-face.css" />
 	<link href="img/favicon.png" rel="shortcut icon" type="image/png">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
@@ -38,12 +37,12 @@
 			<div class="form">
 				<form >
 					<h3>Trial Class</h3>
-					<input type="text" placeholder="Enter your name" required pattern="[a-zA-Zа-яА-ЯёЁ ]+"maxlength="20">
+					<input type="text" placeholder="Enter your name" required pattern="[a-zA-Zа-яА-ЯёЁ ]+" maxlength="20">
 					<span class="form__error">Введите Имя только из букв</span>
 					<input type="tel" placeholder="Enter your phone" required pattern="^\+\d{3}\d{(}\d{2}\d{)}\d{3-}\d{2-}\d{2}$" minlength="17" maxlength="18" />
 					<span class="form__error">Введите в формате +380(12)456-78-90</span>
-					<select name="learn-class" id="learn-class" required="">
-			                  <option value="#" disabled selected hidden>Chose your class</option>
+					<select name="learn-class" id="learn-class" size="1" >
+			                  <option value="Chose your class" disabled selected hidden>Chose your class</option>
 			                  <option value="#">Yoga1</option>
 			                  <option value="#">Yoga2</option>
 			                </select>
@@ -159,7 +158,10 @@
 				<div class="move-left">
 					<img src="img/arrow_left_our.png" alt="arrow_left">
 				</div>
-				<div class="slider">
+				<div class="slider single-item">
+					<div>
+						<img src="img/slider_foto.png" alt="slider-foto">
+					</div>
 					<div>
 						<img src="img/slider_foto.png" alt="slider-foto">
 					</div>
@@ -217,8 +219,6 @@
 				</div>
 			</div>
 		</div>
-
-		
 	</section>
 	<section class="price scroll-shop-us">
 		<div class="price-block">
@@ -266,7 +266,7 @@
 		</div>
 		<div class="bloquotes">
 			<div class="slide">
-				<div class="slider single-item">
+				<div class="slider ">
 					<div class="slider-flex">
 						<div class="image">
 							<img src="img/slider_quotes.png" alt="foto_slider">
@@ -298,12 +298,14 @@
 				<div class="move-left">
 					<img src="img/arrow_left_our.png" alt="arrow_left">
 				</div>
-				<div class="slider-trainer">
-					<div class="foto">
-						<img src="img/trainer.png" alt="trainer">
-					</div>
-					<div class="name">
-						<p><span>Sara Taylor</span><br>Trainer</p>
+				<div class="trainer-slide">
+					<div class="slider-trainer">	
+						<div class="foto">
+							<img src="img/trainer.png" alt="trainer">
+						</div>
+						<div class="name">
+							<p><span>Sara Taylor</span><br>Trainer</p>
+						</div>
 					</div>
 				</div>
 				<div class="move-right">
@@ -347,5 +349,6 @@
 	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>

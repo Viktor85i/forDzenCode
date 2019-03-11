@@ -1,7 +1,15 @@
 $(function() {
 
 
-	/*$('.single-item').slick();*/
+	$('.single-item').slick({
+		prevArrow: false,
+		nextArrow: false
+	});
+	$('.move-right').on('click',function(){ $('.single-item').slick('slickNext'); });
+	$('.move-left').on('click',function(){ $('.single-item').slick('slickPrev'); });
+
+
+
 
 	$('.scroll-about').click(function () {
 		$('html, body').animate({scrollTop: $(".scroll-about-us").offset().top}, 2000);
@@ -26,7 +34,6 @@ $(function() {
 	$('.price-item button').hover(function() {
 		$(this).css({'color':'#38ecbf','background-color':'#26265c'});
 		$(this).parent().prev().find('h3,span').css('color', '#38ecbf');
-
 
 	});
 
