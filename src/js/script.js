@@ -1,16 +1,6 @@
 $(function() {
 
 
-	$('.single-item').slick({
-		prevArrow: false,
-		nextArrow: false
-	});
-	$('.move-right').on('click',function(){ $('.single-item').slick('slickNext'); });
-	$('.move-left').on('click',function(){ $('.single-item').slick('slickPrev'); });
-
-
-
-
 	$('.scroll-about').click(function () {
 		$('html, body').animate({scrollTop: $(".scroll-about-us").offset().top}, 2000);
 	});
